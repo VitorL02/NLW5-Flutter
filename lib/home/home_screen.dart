@@ -25,7 +25,21 @@ class _HomePageState extends State<HomePage> {
                 LevelButton(label: "Difícil"),
                 LevelButton(label: "Perito"),
               ]),
-              QuizCardWidget()
+              SizedBox(
+                height: 24,
+              ),
+              Expanded(
+                child: GridView.count(
+                  crossAxisSpacing: 5,
+                  mainAxisSpacing: 16,
+                  crossAxisCount: 2,
+                  children: [
+                    QuizCardWidget(),
+                    QuizCardWidget(),
+                    QuizCardWidget()
+                  ],
+                ),
+              )
             ],
           ),
         ));
