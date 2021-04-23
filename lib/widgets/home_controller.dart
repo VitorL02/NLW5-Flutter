@@ -1,4 +1,5 @@
 import 'package:DevQuiz/core/app_images.dart';
+import 'package:DevQuiz/home/home_repository.dart';
 import 'package:DevQuiz/shared/widgets/progress_indicator/models/awnser_model.dart';
 import 'package:DevQuiz/shared/widgets/progress_indicator/models/question_models.dart';
 import 'package:DevQuiz/shared/widgets/progress_indicator/models/quiz_models.dart';
@@ -12,6 +13,8 @@ class HomeController {
   set state(HomeState state) => stateNotifier.value = state;
   HomeState get state => stateNotifier.value;
 
+  final repository = HomeRepository(); //entrega os dados do user.json
+
   UserModel? user;
   List<QuizModel>? quizzes;
 
@@ -21,29 +24,13 @@ class HomeController {
   void getUser() async {
     state = HomeState.loading;
     await Future.delayed(Duration(seconds: 2));
-    user = UserModel(
-        name: "Vitor Dev",
-        photoUrl: 'https://avatars.githubusercontent.com/u/68614036?v=4');
+    user = await repository.getUser();
     state = HomeState.success;
   }
 
   void getQuizzes() async {
     state = HomeState.loading;
-    await Future.delayed(Duration(seconds: 2));
-    quizzes = [
-      QuizModel(
-          image: AppImages.blocks,
-          level: Level.facil,
-          title: 'Nlw5 Flutter',
-          questions: [
-            QuestionModel(title: 'Essa e uma pergunta de Flutter', anwsers: [
-              AwnserModel(title: 'Esta incrivel'),
-              AwnserModel(title: 'Esta incrivel'),
-              AwnserModel(title: 'Esta incrivel'),
-              AwnserModel(title: 'Esta incrivel', isRight: true),
-            ])
-          ])
-    ];
+    quizzes = await repository.getQuizzes();
     state = HomeState.success;
   }
 }
