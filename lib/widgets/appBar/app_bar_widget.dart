@@ -1,12 +1,14 @@
 import 'package:DevQuiz/core/app_gradients.dart';
 import 'package:DevQuiz/core/app_text_styles.dart';
+import 'package:DevQuiz/shared/widgets/progress_indicator/models/user_model.dart';
 import 'package:DevQuiz/widgets/scoreCard/score_card_widget.dart';
 import 'package:flutter/material.dart';
 
 //O preffered size e necessario pois a appBar pede um tamanho pre definido
 
 class AppBarWidget extends PreferredSize {
-  AppBarWidget()
+  final UserModel user;
+  AppBarWidget({required this.user})
       : super(
           preferredSize: Size.fromHeight(250),
           child: Container(
@@ -28,7 +30,7 @@ class AppBarWidget extends PreferredSize {
                           style: AppTextStyles.title,
                           children: [
                             TextSpan(
-                              text: 'Vitor Dev',
+                              text: user.name,
                               style: AppTextStyles.titleBold,
                             ),
                           ])),
@@ -38,8 +40,7 @@ class AppBarWidget extends PreferredSize {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
-                              image: NetworkImage(
-                                  'https://avatars.githubusercontent.com/u/68614036?v=4')),
+                              image: NetworkImage(user.photoUrl)),
                         ),
                       ),
                     ],

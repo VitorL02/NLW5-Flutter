@@ -1,4 +1,3 @@
-import 'package:DevQuiz/challenge/widgets/awnser/awnser_widget.dart';
 import 'package:DevQuiz/challenge/widgets/quest_indicator/quest_indicator.dart';
 import 'package:DevQuiz/challenge/widgets/quiz_widget/quiz_widget.dart';
 import 'package:flutter/material.dart';

@@ -10,9 +10,11 @@ class QuizWidget extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          Text(
-            title,
-            style: AppTextStyles.heading,
+          Flexible(
+            child: Text(
+              title,
+              style: AppTextStyles.heading,
+            ),
           ),
           SizedBox(height: 24),
           AwnserWidget(
