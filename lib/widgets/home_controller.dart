@@ -1,7 +1,4 @@
-import 'package:DevQuiz/core/app_images.dart';
 import 'package:DevQuiz/home/home_repository.dart';
-import 'package:DevQuiz/shared/widgets/progress_indicator/models/awnser_model.dart';
-import 'package:DevQuiz/shared/widgets/progress_indicator/models/question_models.dart';
 import 'package:DevQuiz/shared/widgets/progress_indicator/models/quiz_models.dart';
 import 'package:DevQuiz/shared/widgets/progress_indicator/models/user_model.dart';
 import 'package:DevQuiz/widgets/home_state.dart';
