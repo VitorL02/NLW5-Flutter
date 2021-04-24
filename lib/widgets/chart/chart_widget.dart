@@ -1,9 +1,11 @@
 import 'package:DevQuiz/core/app_colors.dart';
 import 'package:DevQuiz/core/core.dart';
+import 'package:DevQuiz/shared/widgets/progress_indicator/models/user_model.dart';
 import 'package:flutter/material.dart';
 
 class ChartWidget extends StatelessWidget {
-  const ChartWidget({Key? key}) : super(key: key);
+  final UserModel user;
+  const ChartWidget({Key? key, required this.user}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class ChartWidget extends StatelessWidget {
           ),
           Center(
             child: Text(
-              "75%",
+              "${user.score}%",
               style: AppTextStyles.heading,
             ),
           ),
