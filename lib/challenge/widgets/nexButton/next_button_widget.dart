@@ -22,12 +22,21 @@ class NextButtonWidget extends StatelessWidget {
   });
 
   NextButtonWidget.purple({required String label, required VoidCallback onTap})
+      : this.backgroundColor = AppColors.purple,
+        this.fontColor = AppColors.white,
+        this.borderColor = AppColors.green,
+        this.onTap = onTap,
+        this.tapColor = Colors.greenAccent,
+        this.label = label;
+
+  NextButtonWidget.green({required String label, required VoidCallback onTap})
       : this.backgroundColor = AppColors.darkGreen,
         this.fontColor = AppColors.white,
         this.borderColor = AppColors.green,
         this.onTap = onTap,
         this.tapColor = Colors.greenAccent,
         this.label = label;
+
   NextButtonWidget.white({required String label, required VoidCallback onTap})
       : this.backgroundColor = AppColors.white,
         this.fontColor = AppColors.grey,
@@ -37,29 +46,27 @@ class NextButtonWidget extends StatelessWidget {
         this.label = label;
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        padding: EdgeInsets.only(bottom: 10),
-        height: 48,
-        child: TextButton(
-          style: ButtonStyle(
-            overlayColor: MaterialStateProperty.all(tapColor),
-            backgroundColor: MaterialStateProperty.all(backgroundColor),
-            shape: MaterialStateProperty.all(
-              RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
-            ),
-            side: MaterialStateProperty.all(
-              BorderSide(color: borderColor),
+    return Container(
+      padding: EdgeInsets.only(bottom: 10),
+      height: 48,
+      child: TextButton(
+        style: ButtonStyle(
+          overlayColor: MaterialStateProperty.all(tapColor),
+          backgroundColor: MaterialStateProperty.all(backgroundColor),
+          shape: MaterialStateProperty.all(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
             ),
           ),
-          onPressed: () {},
-          child: Text(
-            label,
-            style: GoogleFonts.notoSans(
-                fontWeight: FontWeight.w600, fontSize: 15, color: fontColor),
+          side: MaterialStateProperty.all(
+            BorderSide(color: borderColor),
           ),
+        ),
+        onPressed: onTap,
+        child: Text(
+          label,
+          style: GoogleFonts.notoSans(
+              fontWeight: FontWeight.w600, fontSize: 15, color: fontColor),
         ),
       ),
     );

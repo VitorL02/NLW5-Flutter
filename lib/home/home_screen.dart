@@ -1,6 +1,5 @@
 import 'package:DevQuiz/challenge/challenge_page.dart';
-import 'package:DevQuiz/challenge/widgets/quiz_widget/quiz_widget.dart';
-import 'package:DevQuiz/core/app_colors.dart';
+
 import 'package:DevQuiz/home/loadingScreen.dart';
 import 'package:DevQuiz/widgets/appBar/app_bar_widget.dart';
 import 'package:DevQuiz/widgets/home_controller.dart';
@@ -70,6 +69,7 @@ class _HomePageState extends State<HomePage> {
                                   MaterialPageRoute(
                                     builder: (context) => ChallengePage(
                                       questions: e.questions,
+                                      title: e.title,
                                     ),
                                   ),
                                 );

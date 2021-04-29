@@ -7,9 +7,8 @@ import 'package:flutter/foundation.dart';
 class HomeController {
   //Utilizando o ValueNotifier (Recurso do flutter),para avisar a home screen quando os dados foram recebidos
   final stateNotifier = ValueNotifier<HomeState>(HomeState.empty);
-  set state(HomeState state) => stateNotifier.value = state;
   HomeState get state => stateNotifier.value;
-
+  set state(HomeState state) => stateNotifier.value = state;
   final repository = HomeRepository(); //entrega os dados do user.json
 
   UserModel? user;
@@ -27,6 +26,7 @@ class HomeController {
 
   void getQuizzes() async {
     state = HomeState.loading;
+    user = await repository.getUser();
     quizzes = await repository.getQuizzes();
     state = HomeState.success;
   }
