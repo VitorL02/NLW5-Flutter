@@ -3,15 +3,11 @@
 <h1 align="center">
 	<Um app para te ensinar flutter
 </h1>
-
+<h2>
 O dev_quiz e um App que ensina sobre o Flutter by Google, e nesse app utilizamos gerenciamento de estado, Json, dart ,e o mais novo NullSafety, e toda aquela estilização sensacional que um app nativo
 tanto pra IOS e Android
-	
+</h2>	
 
-<h1 align = "center">Progresso</h1>
-<h2 align="center"> 
-	🔋  Dev_Quiz 🚀 Completo 🔋  
-</h2>
 
 <h1 align="center">
 Technologies
@@ -32,6 +28,10 @@ Technologies
 
 
 
+<h1 align = "center">Progresso</h1>
+<h2 align="center"> 
+	🔋  Dev_Quiz 🚀 Completo 🔋  
+</h2>
 
 ## Getting Started
 
