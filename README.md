@@ -8,7 +8,9 @@ O dev_quiz e um App que ensina sobre o Flutter by Google, e nesse app utilizamos
 tanto pra IOS e Android
 
 
-#Technologies
+<h1 align="center">
+Technologies
+</h1>
 <h1 align="center">
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:6796540831303106560/">🔗Flutter</a>
    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6796540831303106560/">💻Dart</a>
