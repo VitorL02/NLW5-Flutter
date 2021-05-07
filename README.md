@@ -1,7 +1,5 @@
 # dev_quiz
 
-A new Flutter project.
-
 <h1 align="center">
 	<Um app para te ensinar flutter
 </h1>
@@ -10,6 +8,10 @@ A new Flutter project.
 tanto pra IOS e Android
 </h2>	
 
+<h1 align = "center">Progresso</h1>
+<h2 align="center"> 
+	🔋  Dev_Quiz 🚀 Completo 🔋  
+</h2>
 
 <h1 align="center">
 Technologies
@@ -27,11 +29,6 @@ Technologies
 
 
 
-
-<h1 align = "center">Progresso</h1>
-<h2 align="center"> 
-	🔋  Dev_Quiz 🚀 Completo 🔋  
-</h2>
 
 
 
