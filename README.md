@@ -2,6 +2,15 @@
 
 A new Flutter project.
 
+
+
+#Technologies
+
+![image](https://user-images.githubusercontent.com/68614036/117504933-97489a80-af59-11eb-8c5c-7265a8b133f8.png) Flutter
+
+
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
