@@ -2,8 +2,9 @@
 
 A new Flutter project.
 
-#Um app para te ensinar flutter 
-
+<<h1 align="center">
+	<strong>Um app para te ensinar flutter</strong> 
+</h1>
 O dev_quiz e um App que ensina sobre o Flutter by Google, e nesse app utilizamos gerenciamento de estado, Json, dart ,e o mais novo NullSafety, e toda aquela estilização sensacional que um app nativo
 tanto pra IOS e Android
 
@@ -26,9 +27,9 @@ Technologies
 
 
 #Progresso
-<h4 align="center"> 
+<h2 align="center"> 
 	🔋  Dev_Quiz 🚀 Completo 🔋  
-</h4>
+</h2>
 
 
 
